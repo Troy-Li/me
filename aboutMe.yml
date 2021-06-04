@@ -1,9 +1,9 @@
 name: Your Name
-studentNumber: z1234567
-officialEmail: noIdea@unsw.edu.au
+studentNumber: z5131149
+officialEmail: dingqian.li@unsw.edu.au
 contactEmail: # don't write on this line
-  firstBit: firstName.Lastname # this avoids spam, the @ is implied
-  otherBit: whereIwork.com
+  firstBit: dingqian.li # this avoids spam, the @ is implied
+  otherBit: unsw.edu.au
 # accounts
-stackOverflowLink: https://stackoverflow.com/users/1835727/ben
+stackOverflowLink: https://stackoverflow.com/users/16123526/li-dingqian
 github: notionparallax
