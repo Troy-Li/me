@@ -11,16 +11,21 @@ import platform
 # I think this will print "hello! Let's get started" by calling the print function.
 print("hello! Let's get started")  # it printed "hello! Let's get started"
 
+# I think it will declare a variable called some_words 
+# and it'ii put a list of stings into it
 some_words = ['what', 'does', 'this', 'line', 'do', '?']
 
+# I think it will find the word in some word 
 for word in some_words:
     print(word)
-
+# it will print the word
+# it will  find the x in some_words
 for x in some_words:
     print(x)
-
+# it will print the x
+# it will print some word
 print(some_words)
-
+# 
 if len(some_words) > 3:
     print('some_words contains more than 3 words')
 
