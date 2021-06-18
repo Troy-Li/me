@@ -1,2 +1,4 @@
 *.pyc
 .vscode/.ropeproject/
+.DS_Store
+
