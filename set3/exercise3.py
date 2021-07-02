@@ -25,66 +25,56 @@ def advancedGuessingGame():
     Remember to think modular. Try to keep your functions small and single
     purpose if you can!
     """
-    print("Welcome to the advanced guessing game!")
-    print("A number between _ and _ ?")
-    i = False
-    while i == False:
-        answer1 = False
-        while answer1 != True:
-            lowerBound = input("Enter an lower bound: ")
-            try:
-                int(lowerBound)
-                answer1 = True
-            except ValueError:
-                print("Only a whole number is accepted!")
-                answer1 = False
-        answer2 = False
-        while answer2 != True:
-            upperBound = input("Enter an upper bound: ")
-            if upperBound > lowerBound:
-                try:
-                    int(upperBound)
-                    i = True
-                    answer2 = True
-                except ValueError:
-                    print("Only a whole number is accepted!")
-                    upperBound = input("Enter an upper bound: ")
-                    answer2 = False
-            else:
-                print("The upperbound can not be smaller or equal to the lowerbound!")
-                answer2 = False
-        print("OK then, a number between " + str(lowerBound) + " and " + str(upperBound) + ".")
+    print("Guessing game started!")
+    print("Guess a  number higher than _ ")
+    a = False
+    while a == False:
+      b1 = False
+      while b1 != True:
+        lowerBound = input("Enter a lower Bound: ")
+        try:
+          int(lowerBound)
+          b1 = True
+        except ValueError:
+          print("integer only")
+          b1 = False
+      b2 = False
+      while b2 != True:
+        upperBound = input("Enter a upper Bound: ")
+        if upperBound > lowerBound:
+          try: 
+            int(upperBound)
+            a = True
+            b2 = True
+          except ValueError:
+            print("integer only")
+            upperBound = input("Enter a upper Bound: ")
+            b2 = False
+      print("A number between" + str(lowerBound) + "and" + str(upperBound))
 
     upperBound = int(upperBound)
     lowerBound = int(lowerBound)
-    actualNumber = random.randint(lowerBound+1, upperBound)
+    actualnumber = random.randint(lowerBound, upperBound)
 
     guessed = False
     while not guessed:
-        answer = False
-        while answer != True:
-          Number = input("Guess a number: ")
-          try:
-              int(Number)
-              answer = True
-          except ValueError:
-              answer = False
-              print("Only a whole number is accepted!")
-        print("You guessed {},".format(Number),)
-        if int(Number) == TrueNumber:
-            print("You got it!! It was {}".format(TrueNumber))
-            guessed = True
-        elif int(Number) < TrueNumber and int(Number) > lowerBound:
-            print("Too small, try again :'(")
-        elif int(Number) > TrueNumber and int(Number) < upperBound:
-            print("Too big, try again :'(")
-        elif int(Number) > upperBound:
-            print("Your guess is not even within your range! It is way to big, it should be lower than " + str(upperBound) + ". Try again :' ")
-        elif int(Number) <= lowerBound:
-            print("Your guess is not even within your range! It is way to small, it should be bigger than " + str(lowerBound) + ". Try again :' ")
-    return "You got it!"
-
-
+      answer = False
+      while answer != True:
+        guess = input("Guess a number:")
+        try:
+          int(guess)
+          answer = True
+        except ValueError:
+            answer = False
+            print("integer only pls")
+      print("You guessed {},".format(guess),)
+      if int(guess) == actualnumber:
+        print("It was {}!".format(actualnumber))
+        guessed = True
+      elif int(guess) < actualnumber and int(guess) > lowerBound:
+        print("too small")
+      elif int(guess) > actualnumber and int(guess) < upperBound:
+        print("too big mate")
     return "You got it!"
     # the tests are looking for the exact string "You got it!". Don't modify that!
 
