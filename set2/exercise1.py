@@ -25,10 +25,10 @@ for x in some_words:
 # it will print the x
 # it will print some word
 print(some_words)
-# 
+
 if len(some_words) > 3:
     print('some_words contains more than 3 words')
-
+#if the length of some_word is more than three, ptint some_words contains more than 3 words
 def usefulFunction():
     """
     You may want to look up what uname does before you guess
